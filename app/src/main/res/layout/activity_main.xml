@@ -16,15 +16,4 @@
         android:tintMode="src_atop"
         tools:scaleType="centerCrop" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/alex_brush"
-        android:rotation="-10"
-        android:text="Restaurant"
-        android:textColor="#ffffff"
-        android:textSize="78dp" />
-
 </FrameLayout>
