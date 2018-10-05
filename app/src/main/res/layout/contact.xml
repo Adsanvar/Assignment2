@@ -6,17 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/resrt" />
+        android:layout_height="415dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map" />
+
+    </FrameLayout>
+    
 
     <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="140px"
-    android:background="@drawable/navBar"
-    />
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="@color/colorNavBar">
+
+        <Button
+            android:id="@+id/btnArrow"
+            android:layout_width="73px"
+            android:layout_height="73px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="37px"
+            android:background="@drawable/arrow" />
+    </FrameLayout>
 
 
 </FrameLayout>
