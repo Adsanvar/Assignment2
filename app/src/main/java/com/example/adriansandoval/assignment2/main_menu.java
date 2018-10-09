@@ -2,6 +2,7 @@ package com.example.adriansandoval.assignment2;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,7 +40,12 @@ public class main_menu extends Activity {
         newsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Toast.makeText(main_menu.this, "News Pressed", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(v.getContext(), News.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                v.getContext().startActivity(intent);
+
             }
         });
 
