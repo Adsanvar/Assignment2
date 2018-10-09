@@ -85,12 +85,16 @@
                 android:id="@+id/newsTwitter"
                 android:layout_width="125px"
                 android:layout_height="125px"
-                android:src="@drawable/twitter"/>
+                android:src="@drawable/twitter"
+                android:layout_marginLeft="18px"
+                android:layout_toRightOf="@id/newsFacebook"/>
             <ImageView
                 android:id="@+id/newsGoogle"
                 android:layout_width="125px"
                 android:layout_height="125px"
-                android:src="@drawable/googlePlus"/>
+                android:layout_toRightOf="@id/newsTwitter"
+                android:layout_marginLeft="18px"
+                android:src="@drawable/googleplus"/>
         </RelativeLayout>
 
     </RelativeLayout>
