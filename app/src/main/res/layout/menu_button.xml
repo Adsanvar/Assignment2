@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuBtn"
+    android:layout_width="237px"
+    android:layout_height="237px"
+    android:clickable="true"
+    >
+    <!-- android:orientation="vertical"android:layout_width="237px"
+        android:layout_height="237px"-->
+    <RelativeLayout
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="270px"
+            android:layout_height="270px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/singlebutton" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="53px"
+            android:layout_height="71px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/menu"></ImageView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8px"
+            android:fontFamily="@font/roboto"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"></TextView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

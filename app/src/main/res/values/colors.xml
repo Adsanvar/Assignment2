@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorOrange">#f7941d</color>
     <color name="colorNavBar">#21283b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mainMenuTint">#595e6c</color>
 </resources>
