@@ -5,4 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorOrange">#f7941d</color>
     <color name="colorNavBar">#21283b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mainMenuTint">#595e6c</color>
+    <color name="black">#000000</color>
+    <color name="newsDate">#b1b1b1</color>
+    <color name="newsBody">#575757</color>
 </resources>
