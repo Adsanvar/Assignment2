@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="6"
+    android:columnCount="1"
+    android:background="@drawable/resrt"
+    android:orientation="vertical"
+    android:layout_gravity="fill">
+
+
+    <ImageButton
+        android:id="@+id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/soup"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/i2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/salad"
+        android:background="@android:color/transparent"/>
+
+
+    <ImageButton
+        android:id="@+id/i3"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/maincourse"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/i4"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/sidedishes"
+        android:background="@android:color/transparent"/>
+
+
+    <ImageButton
+        android:id="@+id/i5"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/dessert"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/i6"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cake"
+        android:background="@android:color/transparent"/>
+
+    </GridLayout>

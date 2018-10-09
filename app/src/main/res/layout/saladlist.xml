@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ImageView
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/salad1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/s3"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/salad3"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/s2"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/salad2"
+        app:layout_constraintBottom_toTopOf="@+id/s3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s1" />
+
+
+    <Button
+        android:id="@+id/s1_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="250dp"
+        android:text="Spinach Sweet Crisp Salad"
+        android:gravity="start"
+        android:textColor="#fff"
+        android:background="@drawable/name"
+        app:layout_constraintBottom_toTopOf="@+id/s2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/s2_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="250dp"
+        android:text="The Trio Soup Salad"
+        android:gravity="start"
+        android:textColor="#fff"
+        android:background="@drawable/name"
+        app:layout_constraintBottom_toTopOf="@+id/s3"
+        app:layout_constraintTop_toBottomOf="@+id/s1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/s3_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="250dp"
+        android:text="Chopped Salad"
+        android:gravity="start"
+        android:textColor="#fff"
+        android:background="@drawable/name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s2_name"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/s1_price"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:baselineAlignBottom="@+id/s1"
+        android:background="@drawable/activebutton"
+        android:text="$10.00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#fff"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-20dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/s2_price"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:baselineAlignBottom="@+id/s1"
+        android:background="@drawable/activebutton"
+        android:text="$12.50"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#fff"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-20dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/s3_price"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:baselineAlignBottom="@+id/s1"
+        android:background="@drawable/activebutton"
+        android:text="$8.50"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#fff"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-20dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

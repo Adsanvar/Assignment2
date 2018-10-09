@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resrt"
+    >
+
+    <TableRow
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Your Name"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_height="27dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:background="#fff"
+            android:hint="SladeDesign." />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Email"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_height="27dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:background="#fff"
+            android:hint="email@email.com" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="4"
+        >
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Message"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:gravity="start"
+            android:layout_height="300dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:background="#fff"
+            android:hint="Hello Word" />
+
+
+    </TableRow>
+
+
+</TableLayout>
