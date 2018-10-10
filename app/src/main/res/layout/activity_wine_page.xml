@@ -194,6 +194,7 @@
     </RelativeLayout>
 
     <include
+        android:id="@+id/wineBtn"
         layout="@layout/winebtn"
         android:layout_width="276px"
         android:layout_height="269px"

@@ -60,6 +60,7 @@ public class main_menu extends Activity {
                 }
                 if(click == 2){
                     //Mahdura's page
+                    Toast.makeText(main_menu.this, "Mahdura's Page", Toast.LENGTH_LONG).show();
                     click=0;
                 }
 
