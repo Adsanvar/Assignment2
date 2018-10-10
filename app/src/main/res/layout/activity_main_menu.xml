@@ -52,7 +52,7 @@
 
         <include
             android:id="@+id/moviesButton"
-            layout="@layout/movies_button"
+            layout="@layout/main_wine_button"
             android:layout_width="0px"
             android:layout_height="0px"
             android:layout_rowWeight="1"
