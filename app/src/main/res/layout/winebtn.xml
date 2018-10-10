@@ -27,7 +27,7 @@
             android:text="BEST PRICE"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="14sp"></TextView>
+            android:textSize="16sp"></TextView>
 
     </RelativeLayout>
 

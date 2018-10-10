@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Booking"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="@drawable/newnavbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:orientation="vertical">
+
+            <Button
+                android:id="@+id/restaurantBtn"
+                android:layout_width="380px"
+                android:layout_height="96px"
+
+                android:background="@drawable/bookingbtn"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Restaurant"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Address:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="5px"/>
+            <TextView
+                android:layout_width="576px"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Lorem ipsum dolor sit amet, consectetur"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_marginLeft="32px"
+                android:textStyle="italic"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Phone:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="32px"
+                />
+            <TextView
+                android:layout_width="574px"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="+44 12 3456 789"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="8px"
+                android:textStyle="italic"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="574px"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="www.restaurantwebsite.com"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="32px"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="34px"
+        android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/cafeBtn"
+                android:layout_width="176px"
+                android:layout_height="97px"
+
+                android:background="@drawable/bookingbtn"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="10dp"
+                android:text="Café"
+                android:gravity="center_vertical"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Address:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="5px"/>
+        <TextView
+            android:layout_width="576px"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Lorem ipsum dolor sit amet, consectetur"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="32px"
+            android:textStyle="italic"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Phone:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="32px"
+                />
+            <TextView
+                android:layout_width="574px"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="+44 12 3456 789"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="8px"
+                android:textStyle="italic"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="574px"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="www.cafewebsite.com"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="32px"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="34px"
+        android:orientation="vertical">
+
+            <Button
+                android:id="@+id/pubBtn"
+                android:layout_width="176px"
+                android:layout_height="97px"
+
+                android:background="@drawable/bookingbtn"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="10dp"
+                android:text="Pub"
+                android:gravity="center_vertical"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Address:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="5px"/>
+        <TextView
+            android:layout_width="576px"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Lorem ipsum dolor sit amet, consectetur"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="32px"
+            android:textStyle="italic"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Phone:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="32px"
+                />
+            <TextView
+                android:layout_width="574px"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="+44 12 3456 789"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="8px"
+                android:textStyle="italic"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="574px"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="www.Pubwebsite.com"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="32px"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Assignment2</string>
     <string name="main_menu">Main Menu</string>
+    <string-array name="news">
+        <item>Wine</item>
+        <item>Food</item>
+    </string-array>
 </resources>
