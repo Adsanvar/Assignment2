@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WineList">
+
+
+    <TextView
+        android:id="@+id/wineListHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="142px"
+        android:background="@drawable/newnavbar"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_vertical"
+        android:text="Wine List"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/firstImage"
+        android:layout_width="542px"
+        android:layout_height="542px"
+        android:layout_weight="1"
+        android:src="@drawable/wine2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wineListHeaderText" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/firstTExt"
+        android:layout_width="542px"
+        android:layout_height="542px"
+        android:layout_weight="1"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstImage"
+        app:layout_constraintTop_toBottomOf="@+id/wineListHeaderText">
+
+        <TextView
+            android:id="@+id/wineHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            android:fontFamily="@font/roboto"
+            android:text="WINE NAME IS HERE"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto"
+            android:text="Red Wine / 2005"
+            android:textAllCaps="false"
+            android:textColor="@color/newsDate"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wineHeader" />
+
+        <TextView
+            android:id="@+id/wineBody"
+            android:layout_width="453px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            android:textAllCaps="false"
+            android:textColor="@color/newsBody"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wineName" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="172px"
+            android:background="@color/colorNavBar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/priceGlass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:text="$2.50"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceBottle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="$26.00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceGlass" />
+
+            <TextView
+                android:id="@+id/glassText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="Glass"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/priceGlass"
+                app:layout_constraintStart_toEndOf="@+id/priceGlass" />
+
+            <TextView
+                android:id="@+id/bottleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="Bottle"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/priceBottle"
+                app:layout_constraintStart_toEndOf="@+id/priceBottle" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <include
+            layout="@layout/winebtn"
+            android:layout_width="210px"
+            android:layout_height="210px"
+            android:layout_marginStart="360px"
+            android:layout_marginTop="293px"
+            android:layout_marginEnd="16px"
+            android:layout_marginBottom="89px"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/secondText"
+        android:layout_width="542px"
+        android:layout_height="542px"
+        android:layout_weight="1"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstImage" >
+
+        <TextView
+            android:id="@+id/wineHeader2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            android:fontFamily="@font/roboto"
+            android:text="WINE NAME IS HERE"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wineName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto"
+            android:text="Red Wine / 2005"
+            android:textAllCaps="false"
+            android:textColor="@color/newsDate"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wineHeader2" />
+
+        <TextView
+            android:id="@+id/wineBody2"
+            android:layout_width="453px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            android:textAllCaps="false"
+            android:textColor="@color/newsBody"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wineName2" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="172px"
+            android:background="@color/colorNavBar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/priceGlass2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:text="$2.00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceBottle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="$19.50"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceGlass2" />
+
+            <TextView
+                android:id="@+id/glassText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="Glass"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/priceGlass2"
+                app:layout_constraintStart_toEndOf="@+id/priceGlass2" />
+
+            <TextView
+                android:id="@+id/bottleText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="Bottle"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/priceBottle2"
+                app:layout_constraintStart_toEndOf="@+id/priceBottle2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+        <include
+            android:id="@+id/sunnyWine"
+            layout="@layout/winebtn"
+            android:layout_width="210px"
+            android:layout_height="210px"
+            android:layout_marginStart="360px"
+            android:layout_marginTop="293px"
+            android:layout_marginEnd="16px"
+            android:layout_marginBottom="89px"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+
+        android:id="@+id/secondImage"
+        android:layout_width="542px"
+        android:layout_height="542px"
+        android:layout_weight="1"
+        android:src="@drawable/wine3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondText"
+        app:layout_constraintTop_toBottomOf="@+id/firstTExt" />
+
+    <ImageView
+
+        android:id="@+id/thirdImage"
+        android:layout_width="542px"
+        android:layout_height="542px"
+        android:layout_weight="1"
+        android:src="@drawable/wine1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondText" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/thirdTxt"
+        android:layout_width="542px"
+        android:layout_height="542px"
+        android:layout_weight="1"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thirdImage"
+        app:layout_constraintTop_toBottomOf="@+id/secondImage">
+
+
+        <TextView
+            android:id="@+id/wineHeader3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            android:fontFamily="@font/roboto"
+            android:text="WINE NAME IS HERE"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wineName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto"
+            android:text="Red Wine / 2005"
+            android:textAllCaps="false"
+            android:textColor="@color/newsDate"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wineHeader3" />
+
+        <TextView
+            android:id="@+id/wineBody3"
+            android:layout_width="453px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            android:textAllCaps="false"
+            android:textColor="@color/newsBody"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wineName3" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="172px"
+            android:background="@color/colorNavBar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/priceGlass3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="$3.00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceBottle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="1dp"
+                android:text="$23.00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceGlass3" />
+
+            <TextView
+                android:id="@+id/glassText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="Glass"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/priceGlass3"
+                app:layout_constraintStart_toEndOf="@+id/priceGlass3" />
+
+            <TextView
+                android:id="@+id/bottleText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="Bottle"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/priceBottle3"
+                app:layout_constraintStart_toEndOf="@+id/priceBottle3" />
+
+        </android.support.constraint.ConstraintLayout>
+        <include
+            layout="@layout/winebtn"
+            android:layout_width="210px"
+            android:layout_height="210px"
+            android:layout_marginStart="360px"
+            android:layout_marginTop="293px"
+            android:layout_marginEnd="16px"
+            android:layout_marginBottom="89px"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

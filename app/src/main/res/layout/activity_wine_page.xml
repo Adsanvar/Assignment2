@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinePage"
+    android:id="@+id/winePage">
+
+    <RelativeLayout
+        android:id="@+id/wineImage"
+        android:layout_width="match_parent"
+        android:layout_height="875px"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/wine"
+        >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newsText"
+        android:layout_width="match_parent"
+        android:layout_height="932px"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <TextView
+
+            android:id="@+id/wineHead"
+            android:layout_width="564px"
+            android:layout_height="102px"
+            android:layout_marginLeft="64px"
+            android:layout_marginRight="64px"
+            android:layout_marginTop="34px"
+            android:fontFamily="@font/roboto"
+            android:text="WINE NAME IS HERE    TWO IN A ROW"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wineDate"
+            android:layout_width="250px"
+            android:layout_height="35px"
+            android:layout_below="@id/wineHead"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="34px"
+            android:fontFamily="@font/roboto"
+            android:text="White Wine / 2010"
+            android:textAllCaps="false"
+            android:textColor="@color/newsDate"
+            android:textSize="10sp"
+            />
+        <TextView
+            android:id="@+id/wineBody"
+            android:layout_width="956px"
+            android:layout_height="336px"
+            android:layout_below="@id/wineDate"
+            android:layout_marginLeft="64px"
+            android:layout_marginTop="45px"
+            android:fontFamily="@font/roboto"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:textAllCaps="false"
+            android:textColor="@color/newsBody"
+            android:textSize="13sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/wineShare"
+            android:layout_width="409px"
+            android:layout_height="125px"
+            android:layout_below="@id/wineBody"
+            android:layout_marginTop="150px"
+            android:layout_marginLeft="613px"
+            >
+
+            <ImageView
+                android:id="@+id/wineFacebook"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:src="@drawable/facebook"
+                />
+            <ImageView
+                android:id="@+id/wineTwitter"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:src="@drawable/twitter"
+                android:layout_marginLeft="18px"
+                android:layout_toRightOf="@id/wineFacebook"/>
+            <ImageView
+                android:id="@+id/wineGoogle"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:layout_toRightOf="@id/wineTwitter"
+                android:layout_marginLeft="18px"
+                android:src="@drawable/googleplus"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/winePriceGlass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64px"
+            android:fontFamily="@font/roboto"
+            android:text="$2.00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/wineShare"/>
+
+        <TextView
+            android:id="@+id/wineGlassText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8px"
+            android:fontFamily="@font/roboto"
+            android:text="Glass"
+            android:textColor="@color/newsBody"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_alignBottom="@+id/winePriceGlass"
+            android:layout_toRightOf="@id/winePriceGlass"/>
+
+        <TextView
+            android:id="@+id/winePriceBotle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64px"
+            android:fontFamily="@font/roboto"
+            android:text="$19.50"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/wineShare"/>
+
+        <TextView
+            android:id="@+id/wineBottleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8px"
+            android:fontFamily="@font/roboto"
+            android:text="Bottle"
+            android:textColor="@color/newsBody"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_alignBottom="@+id/winePriceBotle"
+            android:layout_toRightOf="@id/winePriceBotle"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/wineNavBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/wineNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="142px"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/newnavbar"
+            />
+
+        <TextView
+            android:id="@+id/wineHeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Vino Bello"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/wineCart"
+            android:layout_width="81px"
+            android:layout_height="70px"
+            android:layout_marginLeft="931px"
+            android:layout_marginTop="36px"
+            android:src="@drawable/cart" />
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/wineBtn"
+        layout="@layout/winebtn"
+        android:layout_width="276px"
+        android:layout_height="269px"
+        android:layout_below="@+id/wineNavBarLayout"
+        android:layout_marginLeft="756px"
+        android:layout_marginTop="525px"
+        android:layout_marginRight="43px" />
+
+</RelativeLayout>

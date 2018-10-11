@@ -44,7 +44,7 @@
         <TextView
             android:id="@+id/newsDate"
             android:layout_width="250px"
-            android:layout_height="24px"
+            android:layout_height="34px"
             android:layout_below="@id/newsHead"
             android:layout_marginLeft="64px"
             android:layout_marginTop="34px"
@@ -52,7 +52,7 @@
             android:text="Tuesday, April 28th, 2015"
             android:textAllCaps="false"
             android:textColor="@color/newsDate"
-            android:textSize="8sp"
+            android:textSize="10sp"
              />
         <TextView
             android:id="@+id/newsBody"
@@ -73,7 +73,7 @@
             android:layout_width="409px"
             android:layout_height="125px"
             android:layout_below="@id/newsBody"
-            android:layout_marginTop="215px"
+            android:layout_marginTop="150px"
             android:layout_marginLeft="613px">
 
             <ImageView

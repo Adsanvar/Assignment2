@@ -26,7 +26,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:src="@drawable/movies"></ImageView>
+            android:src="@drawable/copa"></ImageView>
 
         <TextView
             android:id="@+id/text"
@@ -36,7 +36,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8px"
             android:fontFamily="@font/roboto"
-            android:text="Movies"
+            android:text="Wine"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
