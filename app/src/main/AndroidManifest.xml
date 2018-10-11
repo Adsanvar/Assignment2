@@ -36,6 +36,9 @@
             android:name=".WineList" android:theme="@android:style/Theme.NoTitleBar">
 
         </activity>
+        <activity android:name=".Triosalad">
+
+        </activity>
     </application>
 
 </manifest>
