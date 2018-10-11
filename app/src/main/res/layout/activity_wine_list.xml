@@ -271,7 +271,9 @@
                 app:layout_constraintStart_toEndOf="@+id/priceBottle2" />
 
     </android.support.constraint.ConstraintLayout>
+
         <include
+            android:id="@+id/sunnyWine"
             layout="@layout/winebtn"
             android:layout_width="210px"
             android:layout_height="210px"
@@ -376,7 +378,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="9dp"
+                android:layout_marginTop="5dp"
                 android:text="$3.00"
                 android:textColor="@color/white"
                 android:textSize="18sp"
@@ -388,7 +390,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="1dp"
                 android:text="$23.00"
                 android:textColor="@color/white"
                 android:textSize="18sp"

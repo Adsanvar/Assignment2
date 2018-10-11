@@ -72,7 +72,7 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(main_menu.this, "Wine Pressed", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(v.getContext(), WinePage.class);
+                Intent intent = new Intent(v.getContext(), WineList.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 v.getContext().startActivity(intent);
 
@@ -100,6 +100,9 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(main_menu.this, "Contact Pressed", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(v.getContext(), contact.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                v.getContext().startActivity(intent);
             }
         });
 

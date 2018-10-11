@@ -29,16 +29,12 @@
             android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".Booking"
-            android:theme="@android:style/Theme.NoTitleBar">
-
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name=".WineList" android:theme="@android:style/Theme.NoTitleBar">
-
-        </activity>
-        <activity android:name=".Triosalad">
-
-        </activity>
+            android:name=".WineList"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name=".contact"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
     </application>
 
 </manifest>
