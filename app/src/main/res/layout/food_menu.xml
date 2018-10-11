@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:rowCount="6"
     android:columnCount="1"
-    android:background="@drawable/resrt"
+    android:background="@drawable/background"
     android:orientation="vertical"
     android:layout_gravity="fill">
 

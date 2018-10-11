@@ -45,7 +45,7 @@ public class main_menu extends Activity {
             public void onClick(View v) {
 
                 Toast.makeText(main_menu.this, "News Pressed", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(v.getContext(), News.class);
+                Intent intent = new Intent(v.getContext(), News2.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 v.getContext().startActivity(intent);
 
