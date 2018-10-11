@@ -26,6 +26,36 @@
             android:name=".News"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
+        <activity android:name=".Foodmenu">
+            <intent-filter>
+                <action android:name="android.intent.action.Food_menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Saladlist">
+            <intent-filter>
+                <action android:name="android.intent.action.Salad_list" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Feebackpage">
+            <intent-filter>
+                <action android:name="android.intent.action.Feedback_page" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Triosalad">
+            <intent-filter>
+                <action android:name="android.intent.action.Trio_salad" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

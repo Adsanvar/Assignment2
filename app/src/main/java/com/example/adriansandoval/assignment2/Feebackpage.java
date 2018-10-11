@@ -3,12 +3,14 @@ package com.example.adriansandoval.assignment2;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class Triosalad extends Activity {
 
+public class Feebackpage extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.triosalad_relative);
+        setContentView(R.layout.feedback_table);
 
+          }
     }
-}
+
+

@@ -34,6 +34,9 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(main_menu.this, "Menu Pressed", Toast.LENGTH_LONG).show();
+                Intent intent= new Intent("android.intent.action.Food_menu");
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
             }
         });
 
@@ -61,6 +64,10 @@ public class main_menu extends Activity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(main_menu.this, "Feedback Pressed", Toast.LENGTH_LONG).show();
+                Intent intent= new Intent("android.intent.action.Feedback_page");
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
+
             }
         });
 
